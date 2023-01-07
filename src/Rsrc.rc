@@ -1,0 +1,16 @@
+#define EDT_NAME                        11
+#define EDT_SERIAL                      12
+#define BTN_INFO                        3
+#define EDT_INFO                        14
+#define IDC_STATIC                      -1
+#include "\masm32\include\resource.h"
+
+190                     ICON    DISCARDABLE "ICON.ICO"
+201                     RCDATA  DISCARDABLE "TLO.JPG"
+
+101 DIALOGEX 0, 0, 280, 170
+STYLE DS_SYSMODAL | DS_CENTER | DS_SETFOREGROUND | WS_POPUP
+BEGIN
+    EDITTEXT        EDT_INFO,0,0,280,170,ES_MULTILINE | NOT 
+                    WS_BORDER | WS_CHILD// | WS_DISABLED// | ES_READONLY//,WS_EX_STATICEDGE //  | WS_VSCROLL
+END
